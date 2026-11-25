@@ -73,3 +73,5 @@ ADMIN_EMAIL=admin@lotusstudio.dev
 ```
 
 for dev use hands and DeepSeek v4.1 Flash
+
+![](frontend/sda.jpg)
