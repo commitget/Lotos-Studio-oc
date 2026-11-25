@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto Serif', serif;
+  @apply bg-white text-gray-900 antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Darumadrop One', cursive;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-teal-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-teal-400;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-active, .slide-leave-active {
+  transition: all 0.3s ease;
+}
+
+.slide-enter-from {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.slide-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
